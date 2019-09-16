@@ -12,7 +12,7 @@ public class RunofIntegers
 		int end = scan.nextInt();
 
 		for (int i = initial; i <= end; i++){
-		System.out.println(i);
+			System.out.println(i);
 		}
 	}
 }
