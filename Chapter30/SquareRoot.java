@@ -45,17 +45,17 @@ public class SquareRoot
 			System.out.println(player2 + " is " + distance2 + " away");
 
 			if (distance1 > distance2){
-				System.out.println(player2 + "wins!!");
+				System.out.println(player2 + " wins!!");
 				wincount2 += 1;
 			} else if (distance2 > distance1){
-				System.out.println(player1 + "wins!!");
+				System.out.println(player1 + " wins!!");
 				wincount1 += 1;
 			} else{
 				System.out.println("You guys tied what the heck - choose different numbers");
 
 			}
 		}
-		
+
 		System.out.println("Final Score:\n" + player1 + ": " + wincount1 + "    " + player2 + ": " + wincount2);
 	}
 }
