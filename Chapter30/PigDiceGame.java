@@ -23,7 +23,7 @@ public class PigDiceGame
 			System.out.println("The computer rolls three dice and got " + compturn + " giving them a total score of " + compscore);
 
 			System.out.println("Okay buddy your turn to roll.");
-			playerturn = rand.nextInt(5) + 1;
+			playerturn = rand.nextInt(6) + 1;
 			
 			while(i == 0){
 				if (playerturn != 1){
@@ -34,7 +34,7 @@ public class PigDiceGame
 					System.out.println("Want to roll again? y or n");
 					String choice = scan.nextLine();
 					if (choice.equals("y")){
-						playerturn = rand.nextInt(5) + 1;
+						playerturn = rand.nextInt(6) + 1;
 					} else {
 						playerscore += playerpotentialscore;
 						playerpotentialscore = 0;
