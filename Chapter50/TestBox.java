@@ -4,8 +4,14 @@ public class TestBox
 	{
 	
 	Box box = new Box(2.5, 5.0, 6.0);
+	Box oldbox = new Box(box);
+	Box bigbox = box.biggerBox(box);
+	Box smallbox = box.smallerBox(box);
 
 	System.out.println("Area: " + box.area() + " Volume: " + box.volume());
+	System.out.println("Area: " + oldbox.area() + " Volume: " + oldbox.volume());
+	System.out.println("Area: " + bigbox.area() + " Volume: " + bigbox.volume());
+	System.out.println("Area: " + smallbox.area() + " Volume: " + smallbox.volume());
 	
 	}
 }
