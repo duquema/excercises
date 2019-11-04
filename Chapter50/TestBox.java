@@ -12,6 +12,7 @@ public class TestBox
 	System.out.println("Area: " + oldbox.area() + " Volume: " + oldbox.volume());
 	System.out.println("Area: " + bigbox.area() + " Volume: " + bigbox.volume());
 	System.out.println("Area: " + smallbox.area() + " Volume: " + smallbox.volume());
+	System.out.println("Could the smaller box fit in the bigger box? " + bigbox.nests(box));
 	
 	}
 }

@@ -28,6 +28,15 @@ public class Box
 		return new Box(0.75 * oldBox.width(), 0.75 * oldBox.height, 0.75 * oldBox.length);
 	}
 
+	public boolean nests(Box outsideBox)
+	{
+		if (outsideBox.length() > length() && outsideBox.width() > width() && outsideBox.height() > height){
+			return true;
+		} else{
+			return false;
+		}
+	}
+
 	public double length()
 	{
 		return this.length;
