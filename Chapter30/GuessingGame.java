@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class GuessingGame
-{	
+{
 	public static void main (String[] args)
 	{
 		Random random = new Random();
@@ -16,14 +16,14 @@ public class GuessingGame
 		while (i < 3){
 			if (guess == x){
 				System.out.println("Woah you actually guessed it. Good job, but I actually lied sorry. There is no candy for you :(");
-				i = 3;
+				i = 4;
 			} else{
 				System.out.println("Haha wrong. Guess again idiot.");
 				i += 1;
 				guess = scan.nextInt();
 			}
 		}
-		
+
 		if (i == 3){
 			System.out.println("You suck bro, no candy for you. The right number was " + x);
 		}
