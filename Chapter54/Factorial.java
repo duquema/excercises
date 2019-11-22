@@ -1,8 +1,9 @@
 import  java.util.Scanner;
 
-public class Factorial {
-  
-  public static void main (String[] args ) {
+public class Factorial
+{  
+  public static void main (String[] args)
+  {
     Scanner scan = new Scanner( System.in );
 
     long fact; 
@@ -16,7 +17,7 @@ public class Factorial {
     {
       fact = factorial( N );
     if (fact<=0){
-		System.out.println("-1");
+		System.out.println("Error!!!!!! Too high or too low you fool!");
 	}
     else{
       	System.out.println( "factorial is " + fact );
@@ -27,11 +28,13 @@ public class Factorial {
   }
 
   public static long factorial( int num ) {
-  	if (num >= 21 || num < 0) return -1;
+  	if (num >= 21 || num < 0){
+  		return -1;
+  	}
     long fct = 1;
-    for ( int j=1; j<=num; j++ )
+    for (int j=1; j<=num; j++){
       fct *= j;
+    }
     return fct;
   }
-
 }
